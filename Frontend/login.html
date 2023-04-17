@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Caompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1 {
+                text-align: center;
+                margin-top: 25px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+            form{
+                width: 60vw;
+                margin: auto; 
+            }
+    </style>
+</head>
+<body>
+     <h1>login Form</h1>
+     <form onsubmit="return false;">
+        
+        <div><label for="">User Name</label><input type="text" name="userName" ></div>
+        <div><label for="">Email</label><input type="email" name="email"></div>
+        <div> <input type="hidden" name="crud_req" value="login "></div>
+        <div><input type="Submit" value="login" ></div>
+     </form>
+<script src="/frontend/login.js" defer></script>
+
+</body>
+</html>
